@@ -15,10 +15,10 @@ export default function AllEntries(){
         )
     }
     return(
-        <section className="grid grid-cols-2 md:grid-cols-4">
+        <section className="grid grid-cols-2 md:grid-cols-4 color">
             {entries.map((entry: Entry, index: number) => {
                 return(
-                    <div id={entry.id} key={index}className="bg-gray-300 shadow-md shadow-gray-500 m-3 p-4 rounded flex flex-col justify-between">
+                    <div id={entry.id} key={index}className="bg-gray-300 shadow-md shadow-gray-500 m-3 p-4 rounded flex flex-col justify-between ">
                         <h1 className="font-bold text-sm md:text-lg">{entry.title}</h1>
                         <p className="text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3">{entry.description}</p>
                         <section className="flex items-center justify-between flex-col md:flex-row pt-2 md:pt-0">
