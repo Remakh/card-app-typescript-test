@@ -23,16 +23,19 @@ const themes = {
 }
 
 export default function App() {
+  // used for setting theme
   const [theme, setTheme] = useState(themes.light)
   const changeTheme = () => {
     setTheme(theme === themes.light ? themes.dark : themes.light)
   }
   
+  //button text toggling
   const [themeText, setThemeText] = useState('Dark Mode')
   const changeThemeText = () => {
     setThemeText(themeText === "Light Mode" ? "Dark Mode" : "Light Mode");
   }
  
+  // toggling theme and text
   const toggleTheme = () => {
     changeTheme() 
     changeThemeText()
@@ -40,6 +43,7 @@ export default function App() {
 
   return (
     <div id={'page'} style={theme}>
+      {/* button for changing dark theme */}
     <button onClick={toggleTheme} className="m-2 p-3 text-l bg-blue-400 hover:bg-blue-500 rounded-md font-medium fontsize-small text-white">{themeText}</button>
     <section >
     <Router>

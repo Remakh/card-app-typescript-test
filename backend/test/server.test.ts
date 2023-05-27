@@ -64,6 +64,7 @@ describe('Entry API', () => {
     });
   });
 
+  // Test PUT /update/:id
   describe('PUT /update/:id', () => {
     it('should update an entry by ID', async () => {
       const entryData = {

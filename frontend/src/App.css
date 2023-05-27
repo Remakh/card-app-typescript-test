@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-
+/* Makes sure the app covers the entire page */
 html, body, #root, #page{
     height: 100%;
   }
